@@ -7,6 +7,7 @@
 h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     text-align: center;
+      margin-bottom: 1rem;
 }
 body {
     
@@ -23,4 +24,46 @@ body {
     background-blend-mode:soft-light;
     background-color: #8cd6cd;
    
+}
+
+.contenedor {
+    max-width: 80rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 1rem;
+}
+nav a {
+    text-decoration: none;
+    color: #101830;
+    font-weight: 800;
+}
+
+
+.columnas {
+    display: flex;
+    gap: 2rem;
+}
+
+.columnasDes {
+    display: flex;
+    gap: 2rem;
+}
+.Primera {
+    flex: 2; /* 66% del ancho */
+}
+
+.Segunda {
+    flex: 1; /* 33% del ancho */
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
 }
