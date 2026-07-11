@@ -6,7 +6,7 @@
     <title>Inicio</title>
 </head>
 <body>
-    
+
     <header>
         <h1>Laurie Anderson</h1>
         <nav>
@@ -24,7 +24,20 @@
 
     <!-- contenedores -->
 
-    <section class="columnas"
+    <section class="columnas" >
+        <article>
+            <h2>Una voz singular en el arte contemporáneo</h2>
+            <p>Laurie Anderson es una artista multidisciplinaria cuya obra abarca performance, música, cine y arte multimedia. Su práctica se caracteriza por la exploración del lenguaje, la tecnología y la narración como herramientas para construir experiencias artísticas complejas. A lo largo de su carrera, ha desarrollado un estilo propio que combina lo experimental con lo accesible.</p>
+        </article>
+        
+        <article> 
+            <h2> Trayectoria y proyección internacional </h2>
+            <p>El trabajo de Laurie Anderson se caracteriza por la integración de tecnologías en sus procesos creativos, no como un fin en sí mismo, sino como una herramienta para expandir el lenguaje artístico. Utiliza dispositivos electrónicos, procesamiento de voz y medios audiovisuales para construir experiencias que combinan relato y experimentación.
+           <br>
+         Sus obras suelen desarrollarse como narraciones fragmentadas, donde la voz guía al espectador a través de historias que mezclan lo personal, lo político y lo ficticio. Este enfoque permite explorar nuevas formas de contar, donde la estructura no es lineal y la interpretación queda abierta.
+</p>
+        </article>
+    </section>
 
 
 </body>
