@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Laurie Anderson</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="gestion.html">Gestión</a></li>
+            </ul>
+        </nav>
+        <main class="contenedor">
+        <section class="intro">
+            <blockquote>“El lenguaje es un virus que viene del espacio exterior.” — Laurie Anderson</blockquote>
+        </section>
+    </header>
+
+    <!-- contenedores -->
+
+    <section class="columnas"
+
+
+</body>
+</html>
