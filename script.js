@@ -1,33 +1,7 @@
-// declaro variables globales
-let cantObras = 0;
-let obrasCargadas = 0;
-let listaObras = [];
-//
-document.getElementById('config').addEventListener("click", () => {
-    cantObras = parseInt(document.getElementById("cantidad").value);
-    if (cantObras > 0) {
-        document.getElementById('config').style.display = 'none';
-        document.getElementById('datos').style.display = 'block';
-    }
-});
-document.getElementById('guardar').addEventListener('click', () => {
-    const nombre = document.getElementById('nombre').value;
-    const duracion = parseInt(document.getElementById('duracion').value);
-    const peso = parseInt(document.getElementById('peso').value);
-
-    if (nombre && duracion > 0 && peso > 0) {
-        listaObras.push({ nombre, duracion, peso });
-        obrasCargadas++;
-
-        document.getElementById('nombre').value = '';
-        document.getElementById('duracion').value = '';
-        document.getElementById('peso').value = '';
-        if(obrasCargadas === cantObras) {
-            document.getElementById('datos').style.display = 'none';
-            document.getElementById('datosGrales').style.display = 'block';
-            document.getElementById('calcular').disabled = false;
-        }
-    } else {
-        alert("Por favor, completa todos los campos correctamente.");
-    }
-});
+// obras
+var listaObras = [
+    { nombre: "Chalkroom" año: "2017", img: "img/obra-anderson.png" },
+    { nombre: "Kick It" año: "2025", img: "img/obra-anderson-1.png" },
+    { nombre: "Fabric 5" año: "2015", img: "img/obra-anderson-2.webp" },
+    { nombre: "Red Trees" año: "2021", img: "img/obra-anderson-3.webp" },
+    { nombre: "Mt. Daly/US IV" año: "1982", img: "img/obra-anderson-4.png" },

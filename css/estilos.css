@@ -65,14 +65,17 @@ min-width: 300;
 
 .columnasDis {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
+
 .Primera {
     flex: 2; 
 }
 
 .Segunda {
     flex: 1; 
+    background-color: rgba (0,0,0,0.05);
+    padding: 1rem; 
 }
 
 footer {
@@ -93,3 +96,10 @@ a:hover {
   color : #13679b;
 
 }
+.contenedorDos {
+    max-width: 80rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
