@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <style>
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Geist+Pixel&display=swap');
+</style>
+<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion</title>
+</head>
+<body>
+    <main class="contenedor">
+        <h1> Gestión de obras</h1>
+        <section id="config">
+            <label>Cantidad de obras:</label>
+            <input type="number" id="cantObras" min="0">
+        </section>
+
+        <section id="datos">
+           <input type="text" id="nombre" placeholder="Nombre de la obra">
+            <input type="number" id="duracion" placeholder="Duración (minutos)">
+            <input type="number" id="peso" placeholder="Peso (MB)">
+         <button id="guardar">Guardar obra</button>
+        </section>
+
+        <section id="datosGrales">
+            <input type="number" id="msXmb" placeholder="ms por MB">
+            <input type="number" id="costo" placeholder="Costo por MB mensual">
+            <button id="calcular" disabled>Calcular</button>
+        </section>
+        <div id="resultado"></div>
+        <button id=" reiniciar" style="display: none;">Reiniciar</button>s
+    </main>
+</body>
+</html>

@@ -15,9 +15,6 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: #101830;
-  
-
     background-image: url('../img/fondo.png');
     background-repeat: repeat;
     background-size: auto;
@@ -58,6 +55,7 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    align-items: flex-start;
 }
 .columnas article {
 flex: 1;
@@ -65,7 +63,7 @@ min-width: 300;
 
 }
 
-.columnasDes {
+.columnasDis {
     display: flex;
     gap: 2rem;
 }
@@ -82,3 +80,16 @@ footer {
     padding: 2rem;
 }
 
+ a:link {
+  
+  color : #b9e3ff; 
+} 
+
+a:visited {
+  color : #06283D;
+}
+
+a:hover {
+  color : #13679b;
+
+}
