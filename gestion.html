@@ -10,27 +10,40 @@
     <title>Gestion</title>
 </head>
 <body>
-    <main class="contenedor">
-        <h1> Gestión de obras</h1>
-        <section id="config">
-            <label>Cantidad de obras:</label>
-            <input type="number" id="cantObras" min="0">
-        </section>
+    <header>
+        <h1>Laurie Anderson</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="obras.html">Obras</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main class="contenedorGestion">
+        <h2>Gestión del repositorio de grabaciones</h2>
 
-        <section id="datos">
-           <input type="text" id="nombre" placeholder="Nombre de la obra">
-            <input type="number" id="duracion" placeholder="Duración (minutos)">
-            <input type="number" id="peso" placeholder="Peso (MB)">
-         <button id="guardar">Guardar obra</button>
-        </section>
+        <section classs = "contenedorGestion">
+            
+           
+             <article class="columnasGestion">
+             <h3> Carga de datos</h3>
+             <p>Complete los datos en orden</p>
 
-        <section id="datosGrales">
-            <input type="number" id="msXmb" placeholder="ms por MB">
-            <input type="number" id="costo" placeholder="Costo por MB mensual">
-            <button id="calcular" disabled>Calcular</button>
+             <!--primer form-->
+             <div id="pCantidad" class="paso">
+                <h4> Paso 1: Cantidad de grabaciones</h4>
+                <label for="inCantidadObras">¿Cuántas obras se van cargar?</label>
+                <input type="number" id="inCantidadObras" name="inCantidadObras" min="1">
+               <button id="btnConfrmCant">Confirmar cantidad</button>
+               <p id="msjCantidad" class="mensaje"></p>
+            </div>
         </section>
-        <div id="resultado"></div>
-        <button id="reiniciar" style="display: none;">Reiniciar</button>
     </main>
+
+
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>

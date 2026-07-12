@@ -1,38 +1,37 @@
-// declaro variables globales
-let cantObras = 0;
-let obrasCargadas = 0;
-let listaObras = [];
-//
-document.getElementById('config').addEventListener("click", () => {
-    cantObras = parseInt(document.getElementById("cantidad").value);
-    if (cantObras > 0) {
-        document.getElementById('config').style.display = 'none';
-        document.getElementById('datos').style.display = 'block';
-    }
-});
-document.getElementById('guardar').addEventListener('click', () => {
-    const nombre = document.getElementById('nombre').value;
-    const duracion = parseInt(document.getElementById('duracion').value);
-    const peso = parseInt(document.getElementById('peso').value);
+// obras
 
-    if (nombre && duracion > 0 && peso > 0) {
-        listaObras.push({ nombre, duracion, peso });
-        obrasCargadas++;
 
-        document.getElementById('nombre').value = '';
-        document.getElementById('duracion').value = '';
-        document.getElementById('peso').value = '';
-        if(obrasCargadas === cantObras) {
-            document.getElementById('datos').style.display = 'none';
-            document.getElementById('datosGrales').style.display = 'block';
-            document.getElementById('calcular').disabled = false;
-        }
-    } else {
-        alert("Por favor, completa todos los campos correctamente.");
+var listaObras = [
+    { nombre: "Chalkroom" , año: "2017", img: "img/obra-anderson.jpg" },
+    { nombre: "Kick It" , año: "2025", img: "img/obra-anderson-1.jpg" },
+    { nombre: "Fabric 5" , año: "2015", img: "img/obra-anderson-2.webp" },
+    { nombre: "Red Trees" , año: "2021", img: "img/obra-anderson-3.webp" },
+    { nombre: "Mt. Daly/US IV" , año: "1982", img: "img/obra-anderson-4.png" }
+    ];
+
+var contenedor = document.getElementById("galeria");
+var boton = document.getElementById("btnCambiar");
+
+function mostrarObras(tamaño) {
+    contenedor.innerHTML = "";
+
+for (var i = 0; i < listaObras.length; i++) {
+    var obra = listaObras[i];
+    contenedor.innerHTML += `
+    <div class="obra-item">
+                <img src="${obra.img}" alt="${obra.nombre}" style="width: ${tamaño};">
+                <p><strong>${obra.nombre}</strong> (${obra.año})</p>
+            </div>
+        `;
     }
-});
 }
-    } else {
-        alert("Por favor, complete todos los campos.");
-    }
+var grande = false;
+boton.addEventListener("click", function() {
+    grande = !grande; // Alternar estado
+    var nuevoTamaño = grande ? "200px" : "100px";
+    mostrarObras(nuevoTamaño);
 });
+
+mostrarObras("100px");
+
+// gestion
