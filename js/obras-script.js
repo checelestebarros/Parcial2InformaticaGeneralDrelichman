@@ -34,4 +34,4 @@ boton.addEventListener("click", function() {
 
 mostrarObras("100px");
 
-// gestion
+

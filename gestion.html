@@ -32,7 +32,7 @@
 
              <!--primer form-->
              <div id="pCantidad" class="paso">
-                <h4> Paso 1: Cantidad de grabaciones</h4>
+                
                 <label for="inCantidadObras">¿Cuántas obras se van cargar?</label>
                 <input type="number" id="inCantidadObras" name="inCantidadObras" min="1">
                <button id="btnConfrmCant">Confirmar cantidad</button>
@@ -62,13 +62,26 @@
                      <button id="btnGuardarGrales" >Guardar datos generales</button>
                 </div>
 
-                </section>
+
+               <div id="pasoAcciones" class="pasoAcc"></div>
+                <button id="btnCalcular" >Calcular resultados</button>
+                    <button id="btnReiniciar">Reiniciar</button>
+                </div>
+            
+            </article>
+
+              <aside class="colResultados">
+                <h3>Resultados</h3>
+                <div id="resultados">
+                    <p>Todavía no hay resultados. Complete la carga de datos.</p>
+                </div>
+            </aside>
+ 
+        </section>
 
     </main>
 
-
-
-    <script src="js/script.js"></script>
+    <script src="js/gestion-script.js"></script>
 
 </body>
 </html>
