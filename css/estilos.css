@@ -50,7 +50,7 @@ nav a {
 }
 
 
-.columnas, {
+.columnas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -103,31 +103,3 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.columnasGestion {
-    display: flex;
-    gap: 3rem;
-}
-
-.colFormulario {
-    flex: 1;
-}
-
-.colResultados {
-    flex: 2;
-    background-color: rgba(0,0,0,0.05);
-    padding: 1rem;
-}
-
-.paso {
-    border: 1px solid #101830;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-
-.paso.oculto {
-    display: none;
-}
-
-.mensaje {
-    font-size: 0.9rem;
-}
